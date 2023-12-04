@@ -81,3 +81,6 @@ npm start
 ```bash
 npm test
 ```
+
+## Sample Test output:
+
