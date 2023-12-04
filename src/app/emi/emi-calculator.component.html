@@ -1,0 +1,60 @@
+<div class="layout-column align-items-center mt-50">
+  <section class="layout-row align-items-center justify-content-center ">
+   
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="block">
+  <div>
+    <label for="loanType">Purpose of your loan?</label>
+    <div class="align-right" *ngFor="let type of loanTypes">
+      <label>
+        <input type="radio" formControlName="loanType" [value]="type"> {{ type }}
+      </label>
+    </div>
+  </div>
+  <div>
+    <label for="loanValue">Loan Value:</label>
+    <input type="number" id="loanValue" formControlName="loanValue">
+    <div class="form-hint error-text" id="hint-input" *ngIf="myForm.get('loanValue').invalid && myForm.get('loanValue').touched">
+      <div *ngIf="myForm.get('loanValue').errors.required">Loan value is required.</div>
+      <div *ngIf="myForm.get('loanValue').errors.min">Loan value must be positive number.</div>
+      <div *ngIf="myForm.get('loanValue').errors.max">Invalid Loan value.</div>
+    </div>
+  </div>
+  <div>
+    <label for="interestRate">Yearly Interest Rate:</label>
+    <input type="number" id="interestRate" formControlName="interestRate">
+    <div class="form-hint error-text" id="hint-input"  *ngIf="myForm.get('interestRate').invalid && myForm.get('interestRate').touched">
+      <div *ngIf="myForm.get('interestRate').errors.required">Interest Rate is required.</div>
+      <div *ngIf="myForm.get('interestRate').errors.min">Interest Rate must be at least 1.</div>
+      <div *ngIf="myForm.get('interestRate').errors.max">Interest Rate must be at most 100.</div>
+    </div>
+  </div>
+
+  <div>
+    <label for="loanTerm">Loan Term(years):</label>
+    <input type="number" id="loanTerm" formControlName="loanTerm">
+    <div class="form-hint error-text" id="hint-input"  *ngIf="myForm.get('loanTerm').invalid && myForm.get('loanTerm').touched">
+      <div *ngIf="myForm.get('loanTerm').errors.required">Loan Term is required.</div>
+      <div *ngIf="myForm.get('loanTerm').errors.min">Loan Term must be at least 1.</div>
+      <div *ngIf="myForm.get('loanTerm').errors.max">Loan Term must be at most 30.</div>
+    </div>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email">
+    <div class="form-hint error-text" id="hint-input"  *ngIf="myForm.get('email').invalid && myForm.get('email').touched">
+      <div *ngIf="myForm.get('email').errors.required">Email is required.</div>
+      <div *ngIf="myForm.get('email').errors.email">Invalid email format.</div>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="myForm.invalid">Submit</button>
+  <div class="result" *ngIf="apiResponse">
+    <label for="emi">EMI Amount: </label>
+    <pre >{{ apiResponse.emi}}/per month</pre>
+  </div>
+</form>
+
+  </section></div>
+
+  

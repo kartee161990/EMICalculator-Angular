@@ -1,0 +1,24 @@
+.block label { 
+    display: inline-block; 
+    width: 180px; 
+    text-align: middle; 
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+button {
+    float: right;
+}
+
+#hint-input {
+    text-align-last: right;
+}
+
+.result {
+    margin-top: 70px;
+}
+
+pre {
+    display: inline;
+}
+
