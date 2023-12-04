@@ -84,3 +84,16 @@ npm test
 
 ## Sample Test output:
 
+- Home page
+<img width="463" alt="Home page" src="https://github.com/kartee161990/EMICalculator-Angular/assets/38460245/a61f01d8-5198-4f37-8391-8a9791b104d6">
+
+- Home page with input values
+<img width="482" alt="Home page with input values" src="https://github.com/kartee161990/EMICalculator-Angular/assets/38460245/22a7bc5e-ce04-4f71-8d66-5320a5a26278">
+
+- Home page with validation error
+<img width="502" alt="Home page with validation error" src="https://github.com/kartee161990/EMICalculator-Angular/assets/38460245/24db4e93-b4a1-4606-83a7-36038d9b41e9">
+
+- Calculated EMI amount from Backend API
+<img width="493" alt="EMI amount from spring boot api" src="https://github.com/kartee161990/EMICalculator-Angular/assets/38460245/0240bcce-6053-4618-a8b3-c0f6134658c6">
+
+
