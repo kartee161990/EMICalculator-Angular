@@ -12,7 +12,7 @@ loan.
 
 ### Instalation guide
 - Download and install Node js 14.x
-- install: 
+- Install Angular: 
 ```bash
 npm -g i @angular/cli@15.2.8
 ```
@@ -55,17 +55,19 @@ We should get the emi based on the form inputs
 Added following test cases to validate all the inputs and functionality
 
  EmiCalculator
- - should create App
- - should initialize form properly in ngOnInit
- - should validate email format
- - should ensure interestRate is between 1 and 100
- - should ensure loanValue is greater than 0
- - should verify loanTypes array initialized properly
- - should ensure loan term is between 1 and 30
- - should mark form fields as touched when form is invalid on form submission
- - should call ApiService and set apiResponse on form submission
+ ```diff
 
+ + should create App
+ + should initialize form properly in ngOnInit
+ + should validate email format
+ + should ensure interestRate is between 1 and 100
+ + should ensure loanValue is greater than 0
+ + should verify loanTypes array initialized properly
+ + should ensure loan term is between 1 and 30
+ + should mark form fields as touched when form is invalid on form submission
+ + should call ApiService and set apiResponse on form submission
 
+```
 **Commands**
 - install: 
 ```bash
