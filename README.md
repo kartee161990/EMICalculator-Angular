@@ -10,6 +10,12 @@ loan.
 - Node Version: v14
 - Default Port: 8000
 
+### Instalation guide
+- Download and install Node js 14.x
+- install: 
+```bash
+npm -g i @angular/cli@15.2.8
+```
 
 ## Functionality Requirements
 
