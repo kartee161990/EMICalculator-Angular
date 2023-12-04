@@ -124,7 +124,7 @@ describe('EmiCalculator', () => {
     component.myForm.get('loanTerm').setValue(invalidLoanTerm);
     expect(component.myForm.get('loanTerm').valid).toBeFalse();
   
-    component.myForm.get('loanTerm').setValue(invalidLoanTerm);
+    component.myForm.get('loanTerm').setValue(validLoanTerm);
     expect(component.myForm.get('loanTerm').valid).toBeTrue();
   });
 

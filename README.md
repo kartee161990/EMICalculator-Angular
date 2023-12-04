@@ -8,7 +8,7 @@ loan.
 - Angular CLI Version: 15.2.8
 - Angular Core Version: 15.2.8
 - Node Version: v14
-- Default Port: 4200
+- Default Port: 8000
 
 
 ## Functionality Requirements
